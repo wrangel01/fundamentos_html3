@@ -1,16 +1,39 @@
-h1 { 
-    color: navy;
+
+@import url(otra-hoja-styles.css);
+
+
+h1 {
+    color: yellowgreen;
+    background-color: black;
 }
 
-h2 {
-    color:chocolate;
+
+p {
+    color: blueviolet;
 }
 
-body {
-    font-family: sans-serif;
+#parrafo-2 {
+    background-color: yellowgreen;
 }
 
-img, video {
-    max-width: 100%;
-    height: auto;
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+
+.text-32 {
+    font-size: 32px;
+}
+
+.text-20 {
+    font-size: 20px;
+}
+
+.text-white {
+    background-color: red;
+}
+
+.text-yellow {
+    background-color: yellow;
 }
