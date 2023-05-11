@@ -37,3 +37,36 @@ p {
 .text-yellow {
     background-color: yellow;
 }
+
+.hijos-directos>li {
+  background-color: blueviolet;
+}
+
+.hijos-desendientes b {
+    background-color: blueviolet;
+
+}
+
+.hermanos-general ~ li {
+    background-color: thistle;
+}
+
+.hermanos-adyacentes + li {
+    background-color: thistle;
+}
+
+.selectores-atributos a[href] {
+    color: orange;
+}
+
+.selectores-atributos a[target="_blank"] {
+    font-weight: bold;
+}
+
+.selectores-atributos a[href*="jon"] {
+    font-size: 20px;
+}
+
+.selectores-atributos a[href$=".com"] {
+    background-color: black;
+}
