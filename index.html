@@ -268,12 +268,15 @@
 <br>
 <textarea name="" id="" cols="50" rows="10"></textarea>
 <br>
+
 <select name="" id="">
     <option value="">html</option>
     <option value="">js</option>
     <option value="">CSS</option>
 </select>
+
 <br><br>
+
 <select name="" id="" multiple>
     <option value="">html</option>
     <option value="">js</option>
@@ -281,16 +284,85 @@
     <option value="">hpt</option>
 </select>
 <br>
+
 <h3>Ejemplo de Fomulario</h3>
 <h4>Formulario de Login</h4>
 <form action="">
-<input type="text" name="usuario">
+<label for="usuario">usuario:</label>
+<input type="text" name="usuario" id="usuario" placeholder="escribe tu usuario" required>
 <br>
-<input type="password" name="contraseña">
+<label for="password">password:</label>
+<input type="password" name="password" id="password" placeholder="escribe tu contraseña" required> 
 <br>
 <input type="submit">
 <br>
 <input type="reset">
+</form>
+<h4>select, radios y checkbox </h4>
+<form>
+    <p>Elige tu idioma</p>
+
+    <select name="idioma" required> 
+        <option value="">Elige tu idioma</option>
+        <option value="Es">Español</option>
+        <option value="In"> Ingles</option>
+        <option value="Fr">Francea</option>
+        <option value="Pt">Portugues</option>
+        <option value="It">Italiano</option>
+    </select>
+
+    <p>Elige tu lenguaje de programacion</p>
+    <input type="radio" name="lenguaje" id="radio-js">
+    <label for="radio-js">JavaScript</label><br>
+    <input type="radio" name="lenguaje" id="radio-Pyton">
+    <label for="radio-Pyton">Python</label><br>
+    <input type="radio" name="lenguaje" id="radio-C++">
+    <label for="radio-C++">C++</label><br>
+    <input type="radio" name="lenguaje" id="radio-php">
+    <label for="radio-php">Php</label><br>
+    
+
+    <p>Elige tus interes</p>
+    <label>
+        <input type="checkbox" name="interes" value="deportes">
+        Deportes
+    </label>
+    <label>
+        <input type="checkbox" name="interes" value="Musica">
+        Musica
+    </label>
+    <label>
+        <input type="checkbox" name="interes" value="Cine">
+        Cine
+    </label>
+    <label>
+        <input type="checkbox" name="interes" value="Arte">
+        Arte
+    </label>
+
+    <p>
+        <label>
+            <input type="checkbox" name="terminos" required>
+            ¿Aceptas terminos y condiciones?
+        </label>
+    </p>
+
+    <h4>Formulario de contacto</h4>
+
+    <form>
+        <input type="text" name="nombre" placeholder="escribe tu nombre"><br>
+        <input type="text" name="email" placeholder="escribe tu  correo"><br>
+        <textarea name="comentarios" cols="30" rows="10" required></textarea>
+    </form>
+
+    <h2>data atributos</h2>
+    
+
+
+
+    <input type="submit">
+    <input type="reset">
+
 </form>
 
 
